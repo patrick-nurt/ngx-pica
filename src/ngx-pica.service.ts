@@ -1,8 +1,5 @@
 import {Injectable} from '@angular/core';
-import {Subject} from 'rxjs/Subject';
-import {Observable} from 'rxjs/Observable';
-import {Subscription} from 'rxjs/Subscription';
-import {BehaviorSubject} from 'rxjs/BehaviorSubject';
+import {Subject, Observable, Subscription} from 'rxjs';
 import {NgxPicaErrorInterface, NgxPicaErrorType} from './ngx-pica-error.interface';
 import {NgxPicaResizeOptionsInterface} from './ngx-pica-resize-options.interface';
 import {NgxPicaExifService} from './ngx-pica-exif.service';
