@@ -7,7 +7,7 @@ export class NgxPicaExifService {
 
     public getExifOrientedImage(image: HTMLImageElement): Promise<HTMLImageElement> {
         return new Promise<HTMLImageElement>((resolve, reject) => {
-            EXIF.getData(image, () => {
+            EXIF.getData(<any>image, () => {
                 const allExifMetaData = EXIF.getAllTags(image),
                     exifOrientation = allExifMetaData.Orientation;
 
